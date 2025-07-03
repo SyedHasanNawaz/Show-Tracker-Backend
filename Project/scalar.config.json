@@ -1,0 +1,7 @@
+{
+  "title": "Show Tracker API",
+  "subdomain": "showtracker-api",
+  "files": [
+    "openapi.json"
+  ]
+}
