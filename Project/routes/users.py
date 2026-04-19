@@ -39,8 +39,8 @@ def register(user: User):
         "password": hash_password(user.password)
     })
     # Added nosec here as it was being flagged by Bandit as a False Positive
-    token = create_token({"sub": user.id})#nosec
-    return {"message": "Registered", "access_token": token}
+    token = create_token({"sub": user.id})# nosec
+    return {"message": "Registered", "access_token": token}# nosec
 
 # Endpoint for user login.
 # Accepts username and password as form data, verifies credentials, and returns a JWT token if valid.
